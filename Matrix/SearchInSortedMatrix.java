@@ -4,6 +4,7 @@ public class SearchInSortedMatrix {
     public static boolean searchInSortedMatrix(int mtx[][], int target){
         int i=0, j= mtx.length-1;
 
+        // O(n+m)
         while (i<mtx.length && j>=0) {
             if(target == mtx[i][j]){
                 return true;
@@ -14,6 +15,7 @@ public class SearchInSortedMatrix {
             }
         }
 
+        // O(nlogn)
         // for(int i=0; i<mtx.length;){
         //     for(int j=mtx[0].length-1; j>=0;){
         //         if(target == mtx[i][j]){
