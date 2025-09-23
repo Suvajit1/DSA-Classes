@@ -1,6 +1,6 @@
 package OOPs;
 
-class Test{
+class TestSum{
     public int sum(int x, int y){
         return x+y;
     }
@@ -35,7 +35,7 @@ class Sub extends Super{
 
 public class Polymorphism {
     public static void main(String[] args) {
-        Test t = new Test();
+        // TestSum t = new TestSum();
 
         // System.out.println(t.sum(1,2));
         // System.out.println(t.sum(1,3,5));
