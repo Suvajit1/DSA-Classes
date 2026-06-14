@@ -18,7 +18,7 @@ public class Question3 {
         }
     }
 
-    public static void createdGraph(ArrayList<Edge>[] graph, int[][] cities){ // Undirected Graph
+    public static void createdGraph(ArrayList<Edge>[] graph, int[][] cities){
         for(int i=0; i<graph.length; i++){
             graph[i] = new ArrayList<>();
         }
@@ -43,7 +43,7 @@ public class Question3 {
         pq.add(new Edge(0, 0));
 
         while (!pq.isEmpty()) {
-            Edge curr = pq.remove(); // par, node, cost
+            Edge curr = pq.remove(); // node, cost
             if(!mstSet[curr.dest]){
                 mstSet[curr.dest] = true;
                 mstCost += curr.dest;
